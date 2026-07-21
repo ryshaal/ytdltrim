@@ -49,9 +49,15 @@ if not exist "%RELEASE_DIR%\ytdltrim.exe" (
 echo [3/4] Menyalin FFmpeg (jika ada di folder ffmpeg\)...
 if exist "ffmpeg\ffmpeg.exe" (
     copy /y "ffmpeg\ffmpeg.exe" "%RELEASE_DIR%\" >nul
+    
     if exist "ffmpeg\ffprobe.exe" (
         copy /y "ffmpeg\ffprobe.exe" "%RELEASE_DIR%\" >nul
     )
+    
+    if exist "ffmpeg\avcodec-62.dll" (
+        copy /y "ffmpeg\avcodec-62.dll" "%RELEASE_DIR%\" >nul
+    )
+    
     if exist "ffmpeg\LICENSE.txt" (
         copy /y "ffmpeg\LICENSE.txt" "%RELEASE_DIR%\LICENSE-FFmpeg.txt" >nul
     ) else if exist "ffmpeg\LICENSE" (
