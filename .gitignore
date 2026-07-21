@@ -3,11 +3,6 @@
 venv/
 env/
 
-# PyInstaller build artifacts
-build/
-dist/
-*.spec
-
 # Hasil download aplikasi
 download/
 
