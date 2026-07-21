@@ -24,3 +24,9 @@ release/
 .DS_Store
 Thumbs.db
 .vscode/
+dist/avfilter-11.dll
+dist/avformat-62.dll
+dist/avutil-60.dll
+dist/ffplay.exe
+dist/swresample-6.dll
+dist/swscale-9.dll
