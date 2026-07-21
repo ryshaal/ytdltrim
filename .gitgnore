@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# Hasil download aplikasi
+download/
+
+# Binari FFmpeg (pihak ketiga, cukup disertakan di zip rilis — lihat README)
+ffmpeg/
+ffmpeg.exe
+ffprobe.exe
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Release package lokal (biarkan hanya di GitHub Releases, bukan di repo)
+release/
+
+# Icon sementara hasil generate ulang (opsional — hapus baris ini kalau mau commit icon)
+# icon.ico
+# icon.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

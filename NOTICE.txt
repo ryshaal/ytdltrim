@@ -1,0 +1,26 @@
+NOTICE — Komponen Pihak Ketiga
+================================
+
+ytdltrim menyertakan binari FFmpeg (ffmpeg.exe) untuk keperluan
+konversi audio dan trimming video.
+
+FFmpeg adalah proyek open-source terpisah, TIDAK dibuat oleh
+pengembang ytdltrim, dan didistribusikan di sini tanpa modifikasi
+apa pun terhadap kode sumbernya.
+
+  Situs resmi   : https://ffmpeg.org
+  Build yang digunakan : https://www.gyan.dev/ffmpeg/builds/
+  Lisensi       : GNU General Public License v3 (GPLv3)
+                  atau GNU Lesser General Public License (LGPL),
+                  tergantung varian build yang diunduh — lihat
+                  LICENSE-FFmpeg.txt untuk teks lengkap.
+  Source code   : https://github.com/FFmpeg/FFmpeg
+
+Penyertaan FFmpeg dalam paket ini bersifat "mere aggregation"
+(diletakkan berdampingan di folder yang sama), sehingga TIDAK
+mengubah status lisensi kode sumber ytdltrim itu sendiri
+(tetap milik & hak penuh pengembang ytdltrim).
+
+Jika Anda mendistribusikan ulang paket ini, mohon tetap sertakan
+file NOTICE.txt dan LICENSE-FFmpeg.txt ini agar kewajiban lisensi
+FFmpeg tetap terpenuhi.
