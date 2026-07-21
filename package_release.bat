@@ -15,7 +15,7 @@ if not exist "dist\ytdltrim.exe" (
     exit /b 1
 )
 
-set VERSION=1.0.0
+set VERSION=1.2.0
 set RELEASE_NAME=ytdltrim-v%VERSION%-win64
 set RELEASE_DIR=release\%RELEASE_NAME%
 
