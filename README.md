@@ -1,4 +1,4 @@
-# ytdltrim
+# ytdltrim -  Download & trim video/audio YouTube
 
 Aplikasi desktop sederhana untuk **download & trim video/audio YouTube**, dibangun dengan Python + CustomTkinter + yt-dlp.
 
