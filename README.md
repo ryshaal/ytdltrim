@@ -54,6 +54,29 @@ ytdltrim/
 
 Hasil download akan otomatis tersimpan di folder `download/` yang dibuat di sebelah file exe / script.
 
-## 🔁 Update ke versi berikutnya
+## 🚀 Merilis ke GitHub (exe + FFmpeg dalam satu ZIP)
+
+1. Jalankan `build.bat` seperti biasa → hasil `dist\ytdltrim.exe`.
+2. Download FFmpeg untuk Windows dari https://www.gyan.dev/ffmpeg/builds/
+   - Disarankan pilih varian **"LGPL shared"** (bukan "GPL essentials"), supaya kewajiban lisensinya lebih ringan.
+   - Extract, lalu ambil `bin\ffmpeg.exe` dan file `LICENSE`/`LICENSE.txt` di dalamnya.
+3. Buat folder `ffmpeg\` di sebelah `build.bat`, isi dengan `ffmpeg.exe` + `LICENSE.txt` tadi.
+4. Jalankan **`package_release.bat`**.
+   - Otomatis membuat `release\ytdltrim-v1.0.0-win64.zip` yang isinya:
+     ```
+     ytdltrim.exe
+     ffmpeg.exe
+     LICENSE-FFmpeg.txt
+     NOTICE.txt
+     README.md
+     ```
+5. Upload file zip itu ke halaman **GitHub Releases** repo kamu.
+
+> ⚖️ **Kenapa harus ada NOTICE.txt & LICENSE-FFmpeg.txt?**
+> FFmpeg berlisensi GPL/LGPL. Karena hanya diletakkan berdampingan (bukan digabung jadi satu binary), kode `ytdltrim` sendiri tidak ikut terikat GPL — tapi kamu tetap wajib menyertakan teks lisensi & atribusi FFmpeg saat mendistribusikan ulang binarinya. Detail lengkap ada di `NOTICE.txt`.
+
+Kalau mau lebih ringan (tanpa urus lisensi FFmpeg sama sekali), alternatifnya: jangan bundling FFmpeg, cukup cantumkan instruksi di README rilis GitHub bahwa user perlu download FFmpeg sendiri dan taruh di folder yang sama.
+
+
 
 Kalau source code (`ytdltrim.py`) diperbarui, cukup jalankan ulang `build.bat` untuk membuat `.exe` versi terbaru.
